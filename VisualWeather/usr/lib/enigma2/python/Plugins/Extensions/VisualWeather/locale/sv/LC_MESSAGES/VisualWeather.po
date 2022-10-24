@@ -1,0 +1,252 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-06 17:55+0000\n"
+"PO-Revision-Date: 2022-10-06 23:29+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Loco-Source-Locale: nb_NO\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: forecast.py:56
+msgid "Visual Weather"
+msgstr "Visuellt Väder"
+
+#: forecast.py:57 main.py:34 settings.py:45
+msgid "Back"
+msgstr "Tillbaka"
+
+#: forecast.py:58 main.py:35
+msgid "OK"
+msgstr "OK"
+
+#: forecast.py:160
+msgid ""
+"No data or invalid location.\n"
+"Please check your weather location in settings."
+msgstr ""
+"Inga uppgifter eller ogiltig plats.\n"
+"Kontrollera din väderposition i inställningarna."
+
+#: forecast.py:180
+msgid "Feels like "
+msgstr "Känns som "
+
+#: forecast.py:204
+msgid "Low"
+msgstr "Låg"
+
+#: forecast.py:207
+msgid "Moderate"
+msgstr "Måttligt"
+
+#: forecast.py:210
+msgid "High"
+msgstr "Hög"
+
+#: forecast.py:213
+msgid "Very High"
+msgstr "Mycket Hög"
+
+#: forecast.py:216
+msgid "Extreme"
+msgstr "Extremt"
+
+#: forecast.py:220
+msgid "New Moon"
+msgstr "Nymåne"
+
+#: forecast.py:224
+msgid "Waxing Crescent"
+msgstr "Växande nymåne"
+
+#: forecast.py:228
+msgid "First Quarter"
+msgstr "Första kvartalet"
+
+#: forecast.py:232
+msgid "Waxing Gibbous"
+msgstr "Växande halvmåne"
+
+#: forecast.py:236
+msgid "Full Moon"
+msgstr "Fullmåne"
+
+#: forecast.py:240
+msgid "Waning Gibbous"
+msgstr "Avtagande halvmåne"
+
+#: forecast.py:244
+msgid "Last Quarter"
+msgstr "Förra kvartalet"
+
+#: forecast.py:248
+msgid "Waning Crescent"
+msgstr "Avtagande nymåne"
+
+#: forecast.py:450
+msgid "Last update: "
+msgstr "Senast uppdaterad: "
+
+#: main.py:32
+msgid "Options"
+msgstr "Alternativ"
+
+#: main.py:57
+msgid "Weather setup"
+msgstr "Inställning av vädret"
+
+#: main.py:59
+msgid "15 day weather forecast"
+msgstr "15 dagars väderprognos"
+
+#: plugin.py:73
+msgid "None"
+msgstr "Ingen"
+
+#: plugin.py:73
+msgid "InfoBar"
+msgstr "InfoBalk"
+
+#: plugin.py:73
+msgid "SecondInfoBar"
+msgstr "AndraInfobalk"
+
+#: plugin.py:85
+msgid "Full width widget"
+msgstr "Widget med full bredd"
+
+#: plugin.py:85
+msgid "Compact widget"
+msgstr "Kompakt widget"
+
+#: plugin.py:86
+msgid "US (°F, miles)"
+msgstr "USA (°F, miles)"
+
+#: plugin.py:86
+msgid "Metric (°C, km)"
+msgstr "Metriskt (°C, km)"
+
+#: plugin.py:86
+msgid "UK (°C, miles)"
+msgstr "UK (°C, miles)"
+
+#: plugin.py:136
+msgid "15 day weather"
+msgstr "15 dagars väder"
+
+#: plugin.py:273
+msgid "Live weather forecasts by KiddaC"
+msgstr "Live väderprognoser från KiddaC"
+
+#: plugin.py:274
+msgid "VisualWeather"
+msgstr "VisuelltVäder"
+
+#: settings.py:36
+msgid "Settings"
+msgstr "Inställningar"
+
+#: settings.py:46
+msgid "Save"
+msgstr "Spara"
+
+#: settings.py:68
+msgid "Really close without saving settings?"
+msgstr "Vill du avsluta utan att spara inställningar?"
+
+#: settings.py:85
+msgid "Please enter your apikey"
+msgstr "Ange din api nyckel"
+
+#: settings.py:89
+msgid "Please enter your location"
+msgstr "Ange din plats"
+
+#: settings.py:101
+msgid "API key (sign up at visualcrossing.com for free personal API key)"
+msgstr ""
+"API nyckel (registrera dig på visualcrossing.com för en gratis personlig "
+"API-nyckel)"
+
+#: settings.py:102
+msgid "Location: Local District / City / City, Country / Postal Code"
+msgstr "Plats: Lokal stadsdel / stad / stad, land / postnummer"
+
+#: settings.py:103
+msgid "Show on infobar or secondinfobar screen"
+msgstr "Visa på skärmen för infobar eller andra infobar"
+
+#: settings.py:104
+msgid "Infobar widget size"
+msgstr "Storlek på Infobar-widget"
+
+#: settings.py:106
+msgid "Infobar compact weather widget X position"
+msgstr "Infobar kompakt väder widget X position"
+
+#: settings.py:107
+msgid "Infobar full weather widget X position"
+msgstr "Infobar full väder widget X position"
+
+#: settings.py:108
+msgid "SecondInfobar compact weather widget X position"
+msgstr "SecondInfobar kompakt väder widget X position"
+
+#: settings.py:109
+msgid "SecondInfobar full weather widget X position"
+msgstr "SecondInfobar widget för fullt väder X-position"
+
+#: settings.py:111
+msgid "Infobar compact weather widget Y position"
+msgstr "Infobar kompakt väder widget Y-position"
+
+#: settings.py:112
+msgid "Infobar full weather widget Y position"
+msgstr "Infobar full väder widget Y-position"
+
+#: settings.py:113
+msgid "SecondInfobar compact weather widget Y position"
+msgstr "SecondInfobar compact weather widget Y-position"
+
+#: settings.py:114
+msgid "SecondInfobar full weather widget Y position"
+msgstr "SecondInfobar full weather widget Y-position"
+
+#: settings.py:116
+msgid "Weather units"
+msgstr "Väder enheter"
+
+#: settings.py:117
+msgid "Select skin *Restart GUI Required"
+msgstr "Välj skin *Restart GUI krävs"
+
+#: settings.py:118
+msgid "Weather icon set"
+msgstr "Väder ikon uppsättning"
+
+#: settings.py:119
+msgid "Weather descriptions language"
+msgstr "Språk för väderbeskrivningar"
+
+#: settings.py:120
+msgid "Show in main menu *Restart GUI Required"
+msgstr "Visa i huvudmenyn *Restart GUI krävs"
+
+#: settings.py:121
+msgid ""
+"Skin developer mode - allow all elements to be used in any screens. 15 day, "
+"full, compact."
+msgstr ""
+"Skin-utvecklingsläge - alla element kan användas i alla skärmar. 15 dagar, "
+"full, kompakt."

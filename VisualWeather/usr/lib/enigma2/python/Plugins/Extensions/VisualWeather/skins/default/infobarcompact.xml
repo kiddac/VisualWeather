@@ -1,0 +1,21 @@
+<screen name="VisualWeatherInfobarCompact" position="0,0" size="360,210" backgroundColor="#ff000000" flags="wfNoBorder" zPosition="20">
+		<ePixmap position="0,0" size="360,210" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VisualWeather/skins/default/images/compact.png" alphatest="blend" zPosition="1" />
+		<widget source="conditions" render="Label" position="24,24" size="360,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="left" zPosition="3" />
+	
+		<widget name="icon" position="24,57" size="96,96" alphatest="blend" scale="1" zPosition="2" />	
+		<widget source="feelslike" render="Label" position="24,153" size="210,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+	
+		<widget source="temp" render="Label" position="120,57" size="96,96" font="visualregular;48" noWrap="1" foregroundColor="#00aeef" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<widget name="precipprob-icon" position="240,51" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="precipprob" render="Label" position="288,57" size="48,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<widget name="tempmax-icon" position="240,99" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="tempmax" render="Label" position="288,105" size="48,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+			
+		<widget name="tempmin-icon" position="240,143" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="tempmin" render="Label" position="288,153" size="48,33" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<applet type="onLayoutFinish">from enigma import ePoint
+self.instance.move(ePoint(self.xpos, self.ypos))</applet>		
+</screen>

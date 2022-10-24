@@ -1,0 +1,8 @@
+Package: enigma2-plugin-extensions-visualweather
+Version: 1.05-20221024
+Section: misc
+Priority: optional
+Architecture: all
+Maintainer: kiddac
+Description: 15 day weather forecasts by KiddaC
+Source: https://www.linuxsat-support.com

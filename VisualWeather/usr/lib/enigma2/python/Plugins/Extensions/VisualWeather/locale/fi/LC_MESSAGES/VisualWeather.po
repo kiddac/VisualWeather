@@ -1,0 +1,246 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-10-02 23:42+0100\n"
+"PO-Revision-Date: 2022-10-06 16:40+0300\n"
+"Last-Translator: Orlandox\n"
+"Language-Team: Orlandox\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: forecast.py:56
+msgid "Visual Weather"
+msgstr "Visuaalinen Sää"
+
+#: forecast.py:57 main.py:34 settings.py:45
+msgid "Back"
+msgstr "Takaisin"
+
+#: forecast.py:58 main.py:35
+msgid "OK"
+msgstr "OK"
+
+#: forecast.py:160
+msgid ""
+"No data or invalid location.\n"
+"Please check your weather location in settings."
+msgstr ""
+"Ei dataa tai epäkelpo sijainti.\n"
+"Tarkista sijainti asetuksista."
+
+#: forecast.py:180
+msgid "Feels like "
+msgstr "Tuntuu kuin "
+
+#: forecast.py:204
+msgid "Low"
+msgstr "Matala"
+
+#: forecast.py:207
+msgid "Moderate"
+msgstr "Kohtalainen"
+
+#: forecast.py:210
+msgid "High"
+msgstr "Korkea"
+
+#: forecast.py:213
+msgid "Very High"
+msgstr "Todella korkea"
+
+#: forecast.py:216
+msgid "Extreme"
+msgstr "Äärimmäinen"
+
+#: forecast.py:220
+msgid "New Moon"
+msgstr "Uusikuu"
+
+#: forecast.py:224
+msgid "Waxing Crescent"
+msgstr "Kasv. kuunsirppi"
+
+#: forecast.py:228
+msgid "First Quarter"
+msgstr "Ensim. neljännes"
+
+#: forecast.py:232
+msgid "Waxing Gibbous"
+msgstr "Kasvava kuu"
+
+#: forecast.py:236
+msgid "Full Moon"
+msgstr "Täysikuu"
+
+#: forecast.py:240
+msgid "Waning Gibbous"
+msgstr "Vähenevä kuu"
+
+#: forecast.py:244
+msgid "Last Quarter"
+msgstr "Viim. neljännes"
+
+#: forecast.py:248
+msgid "Waning Crescent"
+msgstr "Väh. kuunsirppi"
+
+#: forecast.py:450
+msgid "Last update: "
+msgstr "Viimeisin päivitys: "
+
+#: main.py:32
+msgid "Options"
+msgstr "Vaihtoehdot"
+
+#: main.py:57
+msgid "Weather setup"
+msgstr "Sääasetukset"
+
+#: main.py:59
+msgid "15 day weather forecast"
+msgstr "15:n päivän sääennuste"
+
+#: plugin.py:73
+msgid "None"
+msgstr "Ei mitään"
+
+#: plugin.py:73
+msgid "InfoBar"
+msgstr "Tietopalkki"
+
+#: plugin.py:73
+msgid "SecondInfoBar"
+msgstr "Toinen tietopalkki"
+
+#: plugin.py:85
+msgid "Full width widget"
+msgstr "Täyden leveyden pienohjelma"
+
+#: plugin.py:85
+msgid "Compact widget"
+msgstr "Kompakti pienohjelma"
+
+#: plugin.py:86
+msgid "US (°F, miles)"
+msgstr "US (°F, mailit)"
+
+#: plugin.py:86
+msgid "Metric (°C, km)"
+msgstr "Metrinen (°C, km)"
+
+#: plugin.py:86
+msgid "UK (°C, miles)"
+msgstr "UK (°C, mailit)"
+
+#: plugin.py:136
+msgid "15 day weather"
+msgstr "15:n päivän sää"
+
+#: plugin.py:273
+msgid "Live weather forecasts by KiddaC"
+msgstr "Elävä sääennuste KiddaC:lta"
+
+#: plugin.py:274
+msgid "VisualWeather"
+msgstr "Visuaalinen sää"
+
+#: settings.py:36
+msgid "Settings"
+msgstr "Asetukset"
+
+#: settings.py:46
+msgid "Save"
+msgstr "Tallenna"
+
+#: settings.py:68
+msgid "Really close without saving settings?"
+msgstr "Suljetaanko ilman asetusten tallennusta?"
+
+#: settings.py:85
+msgid "Please enter your apikey"
+msgstr "Syötä API-avaimesi"
+
+#: settings.py:89
+msgid "Please enter your location"
+msgstr "Syötä sijaintisi"
+
+#: settings.py:101
+msgid "API key (sign up at visualcrossing.com for free personal API key)"
+msgstr "API-avain (kirjaudu visualcrossing.com:in saadaksesi ilmaisen henk.koht. API-avaimesi)"
+
+#: settings.py:102
+msgid "Location: Local District / City / City, Country / Postal Code"
+msgstr "Sijainti: Paikallinen alue / Kaupunki / Kaupunki, Maa / Postinumero"
+
+#: settings.py:103
+msgid "Show on infobar or secondinfobar screen"
+msgstr "Näytä tietopalkin tai toisen tietopalkin näytössä"
+
+#: settings.py:104
+msgid "Infobar widget size"
+msgstr "Tietopalkin pienohjelman koko"
+
+#: settings.py:106
+msgid "Infobar compact weather widget X position"
+msgstr "Tietopalkin kompaktin sääpienohjelman X-positio"
+
+#: settings.py:107
+msgid "Infobar full weather widget X position"
+msgstr "Tietopalkin täyden sääpienohjelman X-positio"
+
+#: settings.py:108
+msgid "SecondInfobar compact weather widget X position"
+msgstr "Toisen tietopalkin kompaktin sääpienohjelman X-positio"
+
+#: settings.py:109
+msgid "SecondInfobar full weather widget X position"
+msgstr "Toisen tietopalkin täyden sääpienohjelman X-positio"
+
+#: settings.py:111
+msgid "Infobar compact weather widget Y position"
+msgstr "Tietopalkin kompaktin sääpienohjelman Y-positio"
+
+#: settings.py:112
+msgid "Infobar full weather widget Y position"
+msgstr "Tietopalkin täyden sääpienohjelman Y-positio"
+
+#: settings.py:113
+msgid "SecondInfobar compact weather widget Y position"
+msgstr "Toisen tietopalkin kompaktin sääpienohjelman Y-position"
+
+#: settings.py:114
+msgid "SecondInfobar full weather widget Y position"
+msgstr "Toisen tietopalkin täyden sääpienohjelman Y-positio"
+
+#: settings.py:116
+msgid "Weather units"
+msgstr "Sääyksiköt"
+
+#: settings.py:117
+msgid "Select skin *Restart GUI Required"
+msgstr "Valitse teema *Käyttöliittymän uudelleen käynnistys vaaditaan"
+
+#: settings.py:118
+msgid "Weather icon set"
+msgstr "Sääkuvakkeet"
+
+#: settings.py:119
+msgid "Weather descriptions language"
+msgstr "Sääkuvauksien kieli"
+
+#: settings.py:120
+msgid "Show in main menu *Restart GUI Required"
+msgstr "Näytä päävalikossa *Käyttöliittymän uudelleen käynnistys vaaditaan"
+
+#: settings.py:121
+msgid "Skin developer mode - allow all elements to be used in any screens. 15 day, full, compact."
+msgstr "Teeman kehittäjämoodi - salli kaikkien elementtien käyttö missä tahansa näytössä. 15 päivää, täysi, kompakti."
+
+msgid "default"
+msgstr "oletus"

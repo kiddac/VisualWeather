@@ -1,0 +1,46 @@
+<screen name="VisualWeatherInfobar" position="0,0" size="1350,210" backgroundColor="#ff000000" flags="wfNoBorder" zPosition="20">
+
+		<ePixmap position="0,0" size="1920,210" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VisualWeather/skins/default/images/full.png" alphatest="blend" zPosition="1" />
+		<widget source="conditions" render="Label" position="24,24" size="360,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="left" zPosition="3" />
+	
+		<widget name="icon" position="24,57" size="96,96" alphatest="blend" scale="1" zPosition="2" />	
+		<widget source="feelslike" render="Label" position="24,153" size="210,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+	
+		<widget source="temp" render="Label" position="120,57" size="96,96" font="visualregular;48" noWrap="1" foregroundColor="#00aeef" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<widget name="tempmax-icon" position="240,81" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="tempmax" render="Label" position="294,90" size="156,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+			
+		<widget name="tempmin-icon" position="240,141" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="tempmin" render="Label" position="294,153" size="156,33" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<widget source="description" render="Label" position="450,24" size="900,33" font="visualregular;21" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="top" zPosition="3" />
+		<widget source="datetime" render="Label" position="450,63" size="1290,33" font="visualregular;12" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="top" zPosition="3" /> 
+
+
+		<widget name="sunrise-icon" position="450,81" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="sunrise" render="Label" position="504,90" size="156,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget name="sunset-icon" position="450,141" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="sunset" render="Label" position="504,153" size="156,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+	
+		<widget name="precipprob-icon" position="660,81" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="precipprob" render="Label" position="712,90" size="156,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget name="humidity-icon" position="660,141" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="humidity" render="Label" position="712,153" size="156,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<widget name="uvindex-icon" position="870,81" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="uvindex" render="Label" position="924,90" size="156,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<widget name="pressure-icon" position="870,141" size="48,48" alphatest="blend" scale="1" zPosition="2" />					
+		<widget source="pressure" render="Label" position="924,153" size="156,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<widget name="moon-icon" position="1090,81" size="48,48" alphatest="blend" scale="1" zPosition="2" />		
+		<widget source="moonphase" render="Label" position="1144,90" size="204,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<widget name="wind-icon" position="1090,141" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="windspeed" render="Label" position="1144,153" size="156,33" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		<applet type="onLayoutFinish">from enigma import ePoint
+self.instance.move(ePoint(self.xpos, self.ypos))</applet>		
+</screen>			

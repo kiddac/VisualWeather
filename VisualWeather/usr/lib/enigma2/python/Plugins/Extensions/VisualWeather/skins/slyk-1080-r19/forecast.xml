@@ -1,0 +1,252 @@
+<screen name="VisualWeatherForecast" position="0,0" size="1920,1080" backgroundColor="#2a70a4" flags="wfNoBorder">
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VisualWeather/visual-gfx/background.png" alphatest="off" position="0,0" size="1920,1080" zPosition="-1" />
+		
+		<eLabel position="0,0" size="1920,300" backgroundColor="#122344" transparent="0" zPosition="1" />
+		
+		<widget source="location" render="Label" position="30,12" size="600,90" font="visualregular;48" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		<widget source="datetime" render="Label" position="630,42" size="1290,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="top" zPosition="3" />
+
+		<widget source="description" render="Label" position="630,78" size="1290,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="top" zPosition="3" />
+		
+		<widget source="conditions" render="Label" position="30,78" size="600,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="top" zPosition="3" />
+	
+		<widget name="icon" position="30,120" size="96,96" alphatest="blend" scale="1" zPosition="2" />	
+		<widget source="temp" render="Label" position="156,120" size="210,60" font="visualregular;48" noWrap="1" foregroundColor="#00aeef" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<widget source="feelslike" render="Label" position="156,180" size="210,48" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+	
+		<widget name="tempmax-icon" position="366,120" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="tempmax" render="Label" position="426,120" size="204,48" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+			
+		<widget name="tempmin-icon" position="366,180" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="tempmin" render="Label" position="426,180" size="204,48" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+	
+		<widget name="sunrise-icon" position="630,120" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="sunrise" render="Label" position="690,120" size="204,48" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget name="sunset-icon" position="630,180" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="sunset" render="Label" position="690,180" size="204,48" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+	
+		<widget name="precipprob-icon" position="894,120" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="precipprob" render="Label" position="954,120" size="204,48" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget name="humidity-icon" position="894,180" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="humidity" render="Label" position="954,180" size="204,48" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<widget name="uvindex-icon" position="1158,120" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="uvindex" render="Label" position="1218,120" size="204,48" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<widget name="pressure-icon" position="1158,180" size="48,48" alphatest="blend" scale="1" zPosition="2" />					
+		<widget source="pressure" render="Label" position="1218,180" size="204,48" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<widget name="moon-icon" position="1422,120" size="48,48" alphatest="blend" scale="1" zPosition="2" />		
+		<widget source="moonphase" render="Label" position="1482,120" size="204,48" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		<widget name="wind-icon" position="1422,180" size="48,48" alphatest="blend" scale="1" zPosition="2" />
+		<widget source="windspeed" render="Label" position="1482,180" size="204,48" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+		
+		
+		<!-- 15 hours forecast -->
+
+		<eLabel position="0,255" size="1920,300" backgroundColor="#193A6E" transparent="0" zPosition="1" />
+		
+		<widget source="hour0-time" render="Label" position="0,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />	
+		<widget source="hour1-time" render="Label" position="128,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour2-time" render="Label" position="256,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour3-time" render="Label" position="384,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour4-time" render="Label" position="512,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour5-time" render="Label" position="640,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour6-time" render="Label" position="768,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour7-time" render="Label" position="896,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour8-time" render="Label" position="1024,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour9-time" render="Label" position="1152,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour10-time" render="Label" position="1280,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour11-time" render="Label" position="1408,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />		
+		<widget source="hour12-time" render="Label" position="1536,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour13-time" render="Label" position="1664,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour14-time" render="Label" position="1792,270" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		
+		<widget name="hour0-icon" position="16,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour1-icon" position="144,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour2-icon" position="272,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour3-icon" position="400,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour4-icon" position="528,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour5-icon" position="656,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour6-icon" position="784,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour7-icon" position="912,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour8-icon" position="1040,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour9-icon" position="1168,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour10-icon" position="1296,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour11-icon" position="1424,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour12-icon" position="1552,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour13-icon" position="1680,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour14-icon" position="1808,318" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		
+		<widget source="hour0-temp" render="Label" position="0,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />	
+		<widget source="hour1-temp" render="Label" position="128,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour2-temp" render="Label" position="256,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour3-temp" render="Label" position="384,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour4-temp" render="Label" position="512,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour5-temp" render="Label" position="640,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour6-temp" render="Label" position="768,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour7-temp" render="Label" position="896,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour8-temp" render="Label" position="1024,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour9-temp" render="Label" position="1152,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour10-temp" render="Label" position="1280,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour11-temp" render="Label" position="1408,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour12-temp" render="Label" position="1536,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour13-temp" render="Label" position="1664,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />	
+		<widget source="hour14-temp" render="Label" position="1792,414" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		
+		<widget name="hour0-precip-icon" position="48,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour1-precip-icon" position="176,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour2-precip-icon" position="304,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour3-precip-icon" position="432,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour4-precip-icon" position="560,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour5-precip-icon" position="688,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour6-precip-icon" position="816,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour7-precip-icon" position="944,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour8-precip-icon" position="1072,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour9-precip-icon" position="1200,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour10-precip-icon" position="1328,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour11-precip-icon" position="1456,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour12-precip-icon" position="1584,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour13-precip-icon" position="1712,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="hour14-precip-icon" position="1840,459" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		
+		<widget source="hour0-precipprob" render="Label" position="0,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />	
+		<widget source="hour1-precipprob" render="Label" position="128,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour2-precipprob" render="Label" position="256,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour3-precipprob" render="Label" position="384,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour4-precipprob" render="Label" position="512,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour5-precipprob" render="Label" position="640,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour6-precipprob" render="Label" position="768,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour7-precipprob" render="Label" position="896,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour8-precipprob" render="Label" position="1024,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour9-precipprob" render="Label" position="1152,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour10-precipprob" render="Label" position="1280,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour11-precipprob" render="Label" position="1408,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />		
+		<widget source="hour12-precipprob" render="Label" position="1536,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour13-precipprob" render="Label" position="1664,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="hour14-precipprob" render="Label" position="1792,498" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+
+		
+		<!-- 15 day forecast -->
+
+		<eLabel position="0,555" size="1920,300" backgroundColor="#122344" transparent="0" zPosition="1" />
+		
+		<widget source="day0-weekday" render="Label" position="0,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />	
+		<widget source="day1-weekday" render="Label" position="128,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day2-weekday" render="Label" position="256,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day3-weekday" render="Label" position="384,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day4-weekday" render="Label" position="512,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day5-weekday" render="Label" position="640,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day6-weekday" render="Label" position="768,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day7-weekday" render="Label" position="896,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day8-weekday" render="Label" position="1024,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day9-weekday" render="Label" position="1152,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day10-weekday" render="Label" position="1280,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day11-weekday" render="Label" position="1408,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />		
+		<widget source="day12-weekday" render="Label" position="1536,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day13-weekday" render="Label" position="1664,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day14-weekday" render="Label" position="1792,570" size="128,48" font="visualregular;30" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		
+		<widget name="day0-icon" position="16,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day1-icon" position="144,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day2-icon" position="272,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day3-icon" position="400,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day4-icon" position="528,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day5-icon" position="656,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day6-icon" position="784,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day7-icon" position="912,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day8-icon" position="1040,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day9-icon" position="1168,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day10-icon" position="1296,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day11-icon" position="1424,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day12-icon" position="1552,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day13-icon" position="1680,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day14-icon" position="1808,618" size="96,96" alphatest="blend" scale="1" zPosition="2" />
+		
+		<widget source="day0-tempmax" render="Label" position="0,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />	
+		<widget source="day0-tempmin" render="Label" position="70,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget source="day1-tempmax" render="Label" position="128,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />
+		<widget source="day1-tempmin" render="Label" position="198,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget source="day2-tempmax" render="Label" position="256,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />
+		<widget source="day2-tempmin" render="Label" position="326,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget source="day3-tempmax" render="Label" position="384,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />
+		<widget source="day3-tempmin" render="Label" position="454,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget source="day4-tempmax" render="Label" position="512,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />
+		<widget source="day4-tempmin" render="Label" position="582,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget source="day5-tempmax" render="Label" position="640,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />
+		<widget source="day5-tempmin" render="Label" position="710,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />		
+
+		<widget source="day6-tempmax" render="Label" position="768,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />
+		<widget source="day6-tempmin" render="Label" position="838,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget source="day7-tempmax" render="Label" position="896,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />
+		<widget source="day7-tempmin" render="Label" position="966,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />	
+
+		<widget source="day8-tempmax" render="Label" position="1024,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />
+		<widget source="day8-tempmin" render="Label" position="1094,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget source="day9-tempmax" render="Label" position="1152,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />
+		<widget source="day9-tempmin" render="Label" position="1222,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget source="day10-tempmax" render="Label" position="1280,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />
+		<widget source="day10-tempmin" render="Label" position="1350,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget source="day11-tempmax" render="Label" position="1408,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />
+		<widget source="day11-tempmin" render="Label" position="1478,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget source="day12-tempmax" render="Label" position="1536,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />
+		<widget source="day12-tempmin" render="Label" position="1606,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget source="day13-tempmax" render="Label" position="1664,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />		
+		<widget source="day13-tempmin" render="Label" position="1734,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget source="day14-tempmax" render="Label" position="1792,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="right" zPosition="3" />
+		<widget source="day14-tempmin" render="Label" position="1862,714" size="59,36" font="visualregular;24" noWrap="1" foregroundColor="#a6a8ab" backgroundColor="#000000" transparent="1" valign="center" zPosition="3" />
+
+		<widget name="day0-precip-icon" position="48,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day1-precip-icon" position="176,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day2-precip-icon" position="304,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day3-precip-icon" position="432,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day4-precip-icon" position="560,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day5-precip-icon" position="688,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day6-precip-icon" position="816,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day7-precip-icon" position="944,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day8-precip-icon" position="1072,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day9-precip-icon" position="1200,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day10-precip-icon" position="1328,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day11-precip-icon" position="1456,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day12-precip-icon" position="1584,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day13-precip-icon" position="1712,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		<widget name="day14-precip-icon" position="1840,759" size="32,32" alphatest="blend" scale="1" zPosition="2" />
+		
+		<widget source="day0-precipprob" render="Label" position="0,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />	
+		<widget source="day1-precipprob" render="Label" position="128,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day2-precipprob" render="Label" position="256,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day3-precipprob" render="Label" position="384,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day4-precipprob" render="Label" position="512,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day5-precipprob" render="Label" position="640,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day6-precipprob" render="Label" position="768,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day7-precipprob" render="Label" position="896,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day8-precipprob" render="Label" position="1024,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day9-precipprob" render="Label" position="1152,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day10-precipprob" render="Label" position="1280,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day11-precipprob" render="Label" position="1408,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />		
+		<widget source="day12-precipprob" render="Label" position="1536,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day13-precipprob" render="Label" position="1664,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+		<widget source="day14-precipprob" render="Label" position="1792,798" size="128,36" font="visualregular;24" noWrap="1" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" valign="center" halign="center" zPosition="3" />
+
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VisualWeather/visual-gfx/button-bg.png" position="0,1020" size="1920,60" alphatest="blend" zPosition="1" />
+		<widget source="key_red" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VisualWeather/visual-gfx/key_red.png" position="750,1031" size="38,38" alphatest="blend" zPosition="2" />
+		<widget source="key_red" render="Label" position="802,1020" size="240,60" font="visualregular;24" foregroundColor="#ffffff" backgroundColor="#132132" valign="center" transparent="1" noWrap="1" zPosition="2" />
+		<widget source="key_green" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VisualWeather/visual-gfx/key_green.png" position="1050,1031" size="38,38" alphatest="blend" zPosition="2" />
+		<widget source="key_green" render="Label" position="1102,1020" size="240,60" font="visualregular;24" foregroundColor="#ffffff" backgroundColor="#132132" valign="center" transparent="1" noWrap="1" zPosition="2" />			
+</screen>

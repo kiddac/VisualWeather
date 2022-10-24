@@ -1,0 +1,245 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: XStreamity\n"
+"POT-Creation-Date: 2022-06-03 13:24+0100\n"
+"PO-Revision-Date: 2022-10-04 14:58+0200\n"
+"Last-Translator: @Kqiqi1\n"
+"Language-Team: \n"
+"Language: sq_AL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ../../../../../../../../../..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: forecast.py:56
+msgid "Visual Weather"
+msgstr "Moti Vizual"
+
+#: forecast.py:57 main.py:34 settings.py:45
+msgid "Back"
+msgstr "Mbrapa"
+
+#: forecast.py:58 main.py:35
+msgid "OK"
+msgstr ""
+
+#: forecast.py:160
+msgid ""
+"No data or invalid location.\n"
+"Please check your weather location in settings."
+msgstr "Ju lutem verefikoni lokacionin tuaj në kofigurator"
+
+#: forecast.py:180
+msgid "Feels like "
+msgstr "Ndjehet si"
+
+#: forecast.py:204
+msgid "Low"
+msgstr "Ulta"
+
+#: forecast.py:207
+msgid "Moderate"
+msgstr "E moderuar"
+
+#: forecast.py:210
+msgid "High"
+msgstr "Larta"
+
+#: forecast.py:213
+msgid "Very High"
+msgstr "Shum të larta"
+
+#: forecast.py:216
+msgid "Extreme"
+msgstr "Ekstreme"
+
+#: forecast.py:220
+msgid "New Moon"
+msgstr "Hëna e re"
+
+#: forecast.py:224
+msgid "Waxing Crescent"
+msgstr "Gjysmëhënës depiluese"
+
+#: forecast.py:228
+msgid "First Quarter"
+msgstr "Çereku i parë"
+
+#: forecast.py:232
+msgid "Waxing Gibbous"
+msgstr "Depilim Gibbous"
+
+#: forecast.py:236
+msgid "Full Moon"
+msgstr "Hëna e plotë"
+
+#: forecast.py:240
+msgid "Waning Gibbous"
+msgstr "Në rënje"
+
+#: forecast.py:244
+msgid "Last Quarter"
+msgstr "Tremujori i fundit"
+
+#: forecast.py:248
+msgid "Waning Crescent"
+msgstr "Gjysmëhëna në rënie"
+
+#: forecast.py:450
+msgid "Last update: "
+msgstr "Aktualizimi i fundit"
+
+#: main.py:32
+msgid "Options"
+msgstr "Opcionet"
+
+#: main.py:57
+msgid "Weather setup"
+msgstr "Konfigurimet e motit"
+
+#: main.py:59
+msgid "15 day weather forecast"
+msgstr "Parashikimi 15 ditor i motit"
+
+#: plugin.py:73
+msgid "None"
+msgstr "Asnjë"
+
+#: plugin.py:73
+msgid "InfoBar"
+msgstr "Infobari Informativ"
+
+#: plugin.py:73
+msgid "SecondInfoBar"
+msgstr "Infobari i dyt informativ"
+
+#: plugin.py:85
+msgid "Full width widget"
+msgstr "Widget me gjerësi të plotë"
+
+#: plugin.py:85
+msgid "Compact widget"
+msgstr "Widget kompakt"
+
+#: plugin.py:86
+msgid "US (°F, miles)"
+msgstr "US (°F, milet)"
+
+#: plugin.py:86
+msgid "Metric (°C, km)"
+msgstr "Metrike (°C, km)"
+
+#: plugin.py:86
+msgid "UK (°C, miles)"
+msgstr "UK (°F, milet)"
+
+#: plugin.py:136
+msgid "15 day weather"
+msgstr "Parashikimi 15 ditor i motit"
+
+#: plugin.py:273
+msgid "Live weather forecasts by KiddaC"
+msgstr "Moti direkt nga KiddaC, përkthyer nga kqiqi1"
+
+#: plugin.py:274
+msgid "VisualWeather"
+msgstr "Moti Vizual"
+
+#: settings.py:36
+msgid "Settings"
+msgstr "Konfigurimet"
+
+#: settings.py:46
+msgid "Save"
+msgstr ""
+
+#: settings.py:68
+msgid "Really close without saving settings?"
+msgstr "Doni me të vërtetë mbylljen pa ruajtur cilësimet?"
+
+#: settings.py:85
+msgid "Please enter your apikey"
+msgstr "Ju lutem vendoseni qelsin API"
+
+#: settings.py:89
+msgid "Please enter your location"
+msgstr "Ju lutem vendoseni lokacionin tuaj"
+
+#: settings.py:101
+msgid "API key (sign up at visualcrossing.com for free personal API key)"
+msgstr "Çelësi API (regjistrohu në visualcrossing.com për çelësin personal API falas)"
+
+#: settings.py:102
+msgid "Location: Local District / City / City, Country / Postal Code"
+msgstr "Vendndodhja: Rrethi Lokal / Qyteti / Qyteti, Vendi / Kodi Postar"
+
+#: settings.py:103
+msgid "Show on infobar or secondinfobar screen"
+msgstr "Shfaq në barin informativ ose në ekranin e dytë informativ"
+
+#: settings.py:104
+msgid "Infobar widget size"
+msgstr "Madhësia e dritarës në infobar"
+
+#: settings.py:106
+msgid "Infobar compact weather widget X position"
+msgstr "Pozicioni X i miniaplikacionit kompakt të motit në barin informativ"
+
+#: settings.py:107
+msgid "Infobar full weather widget X position"
+msgstr "Pozicioni X i miniaplikacionit të plotë të motit në barin informativ"
+
+#: settings.py:108
+msgid "SecondInfobar compact weather widget X position"
+msgstr "Pozicioni X i miniaplikacionit kompakt të motit në barin e dyt informativ"
+
+#: settings.py:109
+msgid "SecondInfobar full weather widget X position"
+msgstr "Pozicioni X i miniaplikacionit të plot të motit në barin e dyt informativ"
+
+#: settings.py:111
+msgid "Infobar compact weather widget Y position"
+msgstr "Pozicioni Y i miniaplikacionit kompakt të motit në barin informativ"
+
+#: settings.py:112
+msgid "Infobar full weather widget Y position"
+msgstr "Pozicioni Y i miniaplikacionit të plotë të motit në barin informativ"
+
+#: settings.py:113
+msgid "SecondInfobar compact weather widget Y position"
+msgstr "Pozicioni Y i miniaplikacionit kompakt të motit në barin e dyt informativ"
+
+#: settings.py:114
+msgid "SecondInfobar full weather widget Y position"
+msgstr "Pozicioni Y i miniaplikacionit të plot të motit në barin e dyt informativ"
+
+#: settings.py:116
+msgid "Weather units"
+msgstr "Njësitë e motit"
+
+#: settings.py:117
+msgid "Select skin *Restart GUI Required"
+msgstr "Selktimi i lëkurës *Nevojitet rindezje e paisjes"
+
+#: settings.py:118
+msgid "Weather icon set"
+msgstr "Vendos ikonat e motit"
+
+#: settings.py:119
+msgid "Weather descriptions language"
+msgstr "Gjuha e motit"
+
+#: settings.py:120
+msgid "Show in main menu *Restart GUI Required"
+msgstr "Trego në menyn time *Nevojitet rindezje e paisjes"
+
+#: settings.py:121
+msgid ""
+"Skin developer mode - allow all elements to be used in any screens. 15 day, full, "
+"compact."
+msgstr ""
+"Modaliteti i zhvilluesit të lëkurës - lejoni që të gjithë elementët-  të përdoren "
+"në çdo ekran."
