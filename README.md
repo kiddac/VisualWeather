@@ -7,8 +7,9 @@ Free sign up required at https://www.visualcrossing.com/ to get your free API ke
 
 Your personal API key can be entered via the plugin or manually pasting into /etc/enigma2/VisualWeather/apikey.txt
 
-Note to skinners
 
+
+Note to skinners
 
 Plugin lives here: /usr/lib/enigma2/python/Plugins/Extensions/VisualWeather
 
