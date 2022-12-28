@@ -16,9 +16,6 @@ else:
 
 
 def VisualWeather_Update():
-    if os.path.isfile(weather_json):
-        os.remove(weather_json)
-
     elements = [
         "datetime",
         "datetimeEpoch",
@@ -97,6 +94,10 @@ def VisualWeather_Update():
 
         r.raise_for_status()
         if r.status_code == requests.codes.ok:
+
+            if os.path.isfile(weather_json):
+                os.remove(weather_json)
+
             try:
                 content = r.json()
 

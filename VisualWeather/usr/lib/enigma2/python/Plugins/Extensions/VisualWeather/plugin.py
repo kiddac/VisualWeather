@@ -174,7 +174,10 @@ class AutoStartTimer:
 
     def runUpdate(self):
         print("*** running weather update ***")
-        self.weathertimer.stop()
+        try:
+            self.weathertimer.stop()
+        except:
+            pass
         from . import update
         update.VisualWeather_Update()
         self.weathertimer.start(15 * 60 * 1000, False)  # every 15 mins run download
