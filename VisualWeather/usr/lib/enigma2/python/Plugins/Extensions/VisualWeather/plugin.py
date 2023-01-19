@@ -62,17 +62,20 @@ languages = [
 config.plugins.VisualWeather = ConfigSubsection()
 cfg = config.plugins.VisualWeather
 
+apipath = str(dir_etc) + "apikey.txt"
+
 
 # check if apikey.txt file exists in specified location
-if not os.path.isfile(dir_etc + "apikey.txt"):
-    open(dir_etc + "apikey.txt", "a").close()
+if not os.path.isfile(apipath):
+    open(apipath, "a").close()
 
 apikey = ""
-with open(dir_etc + "apikey.txt", "r") as f:
-    apikey = f.readline()
+if os.stat(apipath).st_size > 0:
+    with open(apipath, "r") as f:
+        f.seek(0)
+        apikey = f.readline().rstrip()
 
-
-cfg.apikey = ConfigText(default=str(apikey), fixed_size=False)
+cfg.apikey = ConfigText(default=apikey, fixed_size=False)
 
 
 cfg.location = ConfigText(default="", fixed_size=False)

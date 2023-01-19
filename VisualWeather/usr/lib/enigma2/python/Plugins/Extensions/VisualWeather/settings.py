@@ -89,7 +89,8 @@ class VisualWeather_Settings(ConfigListScreen, Screen):
             self.session.open(MessageBox, _("Please enter your location"), MessageBox.TYPE_WARNING)
             return
 
-        with open(dir_etc + "apikey.txt", "w") as f:
+        apipath = str(dir_etc) + "apikey.txt"
+        with open(apipath, "w") as f:
             f.write(cfg.apikey.value)
 
         if cfg.location.value and cfg.apikey.value:
@@ -156,10 +157,6 @@ class VisualWeather_Settings(ConfigListScreen, Screen):
         self.list.append(self.cfg_main)
         self.list.append(self.cfg_developer)
 
-        self["config"].list = self.list
-        self["config"].l.setList(self.list)
-        self.handleInputHelpers()
-
         iconpath = str(icons_folder) + str(cfg.iconset.value) + "/conditions/preview.png"
 
         if os.path.isfile(iconpath):
@@ -171,6 +168,10 @@ class VisualWeather_Settings(ConfigListScreen, Screen):
                 print(e)
         else:
             self["iconset"].hide()
+
+        self["config"].list = self.list
+        self["config"].l.setList(self.list)
+        self.handleInputHelpers()
 
     def handleInputHelpers(self):
         from enigma import ePoint
