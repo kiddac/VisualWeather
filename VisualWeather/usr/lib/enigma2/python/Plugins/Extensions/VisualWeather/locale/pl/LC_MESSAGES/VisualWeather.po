@@ -36,7 +36,7 @@ msgstr ""
 
 #: forecast.py:180
 msgid "Feels like "
-msgstr "Temperatura Odczuwalna:  "
+msgstr "Odczuwalna: "
 
 #: forecast.py:204
 msgid "Low"
@@ -92,7 +92,7 @@ msgstr "Ubywający sierp"
 
 #: forecast.py:450
 msgid "Last update: "
-msgstr "Ostatnia aktualizacja "
+msgstr "Ost. aktualizacja: "
 
 #: main.py:32
 msgid "Options"
