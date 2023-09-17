@@ -8,6 +8,13 @@ from collections import OrderedDict
 import os
 import json
 import requests
+try:
+    from http.client import HTTPConnection
+    HTTPConnection.debuglevel = 0
+except:
+    from httplib import HTTPConnection
+    HTTPConnection.debuglevel = 0
+requests.packages.urllib3.disable_warnings()
 
 if pythonVer == 2:
     from urllib import quote
