@@ -67,7 +67,8 @@ apipath = str(dir_etc) + "apikey.txt"
 
 # check if apikey.txt file exists in specified location
 if not os.path.isfile(apipath):
-    open(apipath, "a").close()
+    with open(apipath, "a") as f:
+        f.close()
 
 apikey = ""
 if os.stat(apipath).st_size > 0:
@@ -99,8 +100,8 @@ cfg.language = ConfigSelection(default="en", choices=languages)
 cfg.main = ConfigYesNo(default=False)
 cfg.developer = ConfigYesNo(default=False)
 
-
-hdr = {"User-Agent": "Enigma2 - VisualWeather Plugin"}
+hdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'}
+# hdr = {"User-Agent": "Enigma2 - VisualWeather Plugin"}
 
 
 # create folder for working files
@@ -117,7 +118,8 @@ if not os.path.exists(dir_tmp):
 
 # check if weather.json file exists in specified location
 if not os.path.isfile(weather_json):
-    open(weather_json, "a").close()
+    with open(weather_json, "a") as f:
+        f.close()
 
 infobarVisualWeatherInstance = None
 infobarVisualWeatherDialog = None
@@ -292,7 +294,7 @@ def Plugins(**kwargs):
 
     main_menu = PluginDescriptor(name=pluginname, description=description, where=PluginDescriptor.WHERE_MENU, fnc=mainmenu, needsRestart=True)
 
-    extensions_menu = PluginDescriptor(name=pluginname, description=description, where=PluginDescriptor.WHERE_EXTENSIONSMENU, fnc=extensionsmenu, needsRestart=True)
+    extensions_menu = PluginDescriptor(name=pluginname, description=description, where=PluginDescriptor.WHERE_EXTENSIONSMENU, fnc=forecast, needsRestart=False)
 
     result = [PluginDescriptor(name=pluginname, description=description, where=[PluginDescriptor.WHERE_SESSIONSTART], fnc=autostart),
               PluginDescriptor(name=pluginname, description=description, where=PluginDescriptor.WHERE_PLUGINMENU, icon=iconFile, fnc=main)]

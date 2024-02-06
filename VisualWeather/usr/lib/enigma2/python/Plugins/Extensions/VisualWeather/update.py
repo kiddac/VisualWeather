@@ -14,7 +14,6 @@ try:
 except:
     from httplib import HTTPConnection
     HTTPConnection.debuglevel = 0
-requests.packages.urllib3.disable_warnings()
 
 if pythonVer == 2:
     from urllib import quote
