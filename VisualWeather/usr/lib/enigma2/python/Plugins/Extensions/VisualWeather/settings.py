@@ -33,7 +33,7 @@ class VisualWeather_Settings(ConfigListScreen, Screen):
         with open(skin, "r") as f:
             self.skin = f.read()
 
-        self.setup_title = (_("Settings"))
+        self.setup_title = _("Settings")
 
         self.onChangedEntry = []
 

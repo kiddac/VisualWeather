@@ -100,9 +100,11 @@ cfg.language = ConfigSelection(default="en", choices=languages)
 cfg.main = ConfigYesNo(default=False)
 cfg.developer = ConfigYesNo(default=False)
 
-hdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'}
-# hdr = {"User-Agent": "Enigma2 - VisualWeather Plugin"}
-
+hdr = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+    'Connection': 'keep-alive',
+    'Accept-Encoding': 'gzip, deflate'
+}
 
 # create folder for working files
 if not os.path.exists(dir_etc):
@@ -289,8 +291,8 @@ def Plugins(**kwargs):
     addFont(font_folder + "m-plus-rounded-1c-medium.ttf", "visualbold", 100, 0)
 
     iconFile = "visual-gfx/plugin-icon.png"
-    description = (_("Live weather forecasts by KiddaC"))
-    pluginname = (_("VisualWeather"))
+    description = _("Live weather forecasts by KiddaC")
+    pluginname = _("VisualWeather")
 
     main_menu = PluginDescriptor(name=pluginname, description=description, where=PluginDescriptor.WHERE_MENU, fnc=mainmenu, needsRestart=True)
 

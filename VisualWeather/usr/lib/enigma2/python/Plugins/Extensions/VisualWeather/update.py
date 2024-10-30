@@ -91,27 +91,27 @@ def VisualWeather_Update():
         + "&include=" + str(includestring) + "&key=" + str(key) + "&contentType=" + str(contentType) + "&iconSet=icons2" + "&lang=" + str(language)
 
     adapter = HTTPAdapter()
-    http = requests.Session()
-    http.mount("http://", adapter)
-    http.mount("https://", adapter)
+    with requests.Session() as http:
+        http.mount("http://", adapter)
+        http.mount("https://", adapter)
 
-    try:
-        r = http.get(url, headers=hdr, verify=False, allow_redirects=True)
+        try:
+            r = http.get(url, headers=hdr, verify=False)
 
-        r.raise_for_status()
-        if r.status_code == requests.codes.ok:
+            r.raise_for_status()
+            if r.status_code == requests.codes.ok:
 
-            if os.path.isfile(weather_json):
-                os.remove(weather_json)
+                if os.path.isfile(weather_json):
+                    os.remove(weather_json)
 
-            try:
-                content = r.json()
+                try:
+                    content = r.json()
 
-                with open(weather_json, "w") as f:
-                    json.dump(OrderedDict(content), f)
-            except Exception as e:
-                print(e)
-                content = ""
+                    with open(weather_json, "w") as f:
+                        json.dump(OrderedDict(content), f)
+                except Exception as e:
+                    print(e)
+                    content = ""
 
-    except Exception as e:
-        print(e)
+        except Exception as e:
+            print(e)

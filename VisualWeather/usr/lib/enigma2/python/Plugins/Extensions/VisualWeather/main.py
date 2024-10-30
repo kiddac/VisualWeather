@@ -29,7 +29,7 @@ class VisualWeather_Main(Screen):
         self.playlists_all = []
         self["list"] = List(self.drawList, enableWrapAround=True)
 
-        self.setup_title = (_("Options"))
+        self.setup_title = _("Options")
 
         self["key_red"] = StaticText(_("Back"))
         self["key_green"] = StaticText(_("OK"))

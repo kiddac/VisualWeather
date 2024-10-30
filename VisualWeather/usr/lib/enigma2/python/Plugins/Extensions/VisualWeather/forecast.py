@@ -58,7 +58,7 @@ class VisualWeather_Forecast(Screen):
         with open(skin, "r") as f:
             self.skin = f.read()
 
-        self.setup_title = (_("Visual Weather"))
+        self.setup_title = _("Visual Weather")
         self["key_red"] = StaticText(_("Back"))
         self["key_green"] = StaticText(_("OK"))
 
