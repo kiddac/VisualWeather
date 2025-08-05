@@ -27,6 +27,8 @@ dir_tmp = "/tmp/VisualWeather/"
 dir_plugins = "/usr/lib/enigma2/python/Plugins/Extensions/VisualWeather/"
 
 font_folder = "%svisual-fonts/" % (dir_plugins)
+addFont(font_folder + "m-plus-rounded-1c-regular.ttf", "visualregular", 100, 0)
+addFont(font_folder + "m-plus-rounded-1c-medium.ttf", "visualbold", 100, 0)
 
 interface_folder = "%svisual-interface/" % (dir_plugins)
 gfx_folder = "%svisual-gfx/" % (dir_plugins)
@@ -102,7 +104,6 @@ cfg.developer = ConfigYesNo(default=False)
 
 hdr = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
-    'Connection': 'keep-alive',
     'Accept-Encoding': 'gzip, deflate'
 }
 
@@ -159,7 +160,7 @@ def extensionsmenu(session, **kwargs):
     return
 
 
-class AutoStartTimer:
+class VWAutoStartTimer:
 
     def __init__(self, session):
         self.session = session
@@ -257,13 +258,13 @@ class infobarVisualWeather:
 
 
 def autostart(reason, session=None, **kwargs):
-    global autoStartTimer
+    global vwAutoStartTimer
     global _firstRun
 
     if reason == 0:
         if session is not None:
             _firstRun = True
-            autoStartTimer = AutoStartTimer(session)
+            vwAutoStartTimer = VWAutoStartTimer(session)
     return
 
 
@@ -287,9 +288,6 @@ def clearWidget(session=None):
 
 
 def Plugins(**kwargs):
-    addFont(font_folder + "m-plus-rounded-1c-regular.ttf", "visualregular", 100, 0)
-    addFont(font_folder + "m-plus-rounded-1c-medium.ttf", "visualbold", 100, 0)
-
     iconFile = "visual-gfx/plugin-icon.png"
     description = _("Live weather forecasts by KiddaC")
     pluginname = _("VisualWeather")

@@ -108,7 +108,7 @@ def VisualWeather_Update():
                     content = r.json()
 
                     with open(weather_json, "w") as f:
-                        json.dump(OrderedDict(content), f)
+                        json.dump(OrderedDict(content), f, indent=4)
                 except Exception as e:
                     print(e)
                     content = ""
