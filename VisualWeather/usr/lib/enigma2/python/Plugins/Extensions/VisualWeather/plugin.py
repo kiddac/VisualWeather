@@ -23,7 +23,6 @@ if os.path.exists("/usr/bin/apt-get"):
 screenwidth = getDesktop(0).size()
 
 dir_etc = "/etc/enigma2/VisualWeather/"
-dir_tmp = "/tmp/VisualWeather/"
 dir_plugins = "/usr/lib/enigma2/python/Plugins/Extensions/VisualWeather/"
 
 font_folder = "%svisual-fonts/" % (dir_plugins)
@@ -110,14 +109,6 @@ hdr = {
 # create folder for working files
 if not os.path.exists(dir_etc):
     os.makedirs(dir_etc)
-
-# delete temporary folder and contents
-if os.path.exists(dir_tmp):
-    shutil.rmtree("/tmp/VisualWeather")
-
-# create temporary folder for downloaded files
-if not os.path.exists(dir_tmp):
-    os.makedirs(dir_tmp)
 
 # check if weather.json file exists in specified location
 if not os.path.isfile(weather_json):
