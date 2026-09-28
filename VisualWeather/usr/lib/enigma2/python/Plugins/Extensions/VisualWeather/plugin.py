@@ -9,7 +9,6 @@ from Plugins.Plugin import PluginDescriptor
 from Screens.InfoBar import InfoBar
 
 import os
-import shutil
 import sys
 
 pythonFull = float(str(sys.version_info.major) + "." + str(sys.version_info.minor))
@@ -102,8 +101,7 @@ cfg.main = ConfigYesNo(default=False)
 cfg.developer = ConfigYesNo(default=False)
 
 hdr = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
-    'Accept-Encoding': 'gzip, deflate'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
 }
 
 # create folder for working files

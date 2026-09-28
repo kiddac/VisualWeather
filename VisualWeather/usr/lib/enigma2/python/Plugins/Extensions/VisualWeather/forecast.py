@@ -14,6 +14,7 @@ from Screens.Screen import Screen
 import datetime
 import json
 import os
+import time
 
 
 def remove_exponent(d):
@@ -178,8 +179,55 @@ class VisualWeather_Forecast(Screen):
 
             self.description = self.weather["description"]
 
+            # alerts
+            self.alerts = self.weather.get("alerts", [])
+
+            self.alerts_event = None
+            self.alerts_headline = None
+            self.alerts_description = None
+            self.alerts_ends = None
+            self.alerts_endsEpoch = None
+            self.alerts_start = None
+            self.alerts_startEpoch = None
+
+            if self.alerts:
+                alert = self.alerts[0]
+
+                self.alerts_event = alert.get("event")
+                self.alerts_headline = alert.get("headline")
+                self.alerts_description = alert.get("description")
+                self.alerts_ends = alert.get("ends")
+                self.alerts_endsEpoch = alert.get("endsEpoch")
+                self.alerts_start = alert.get("onset")
+                self.alerts_startEpoch = alert.get("onsetEpoch")
+
+            self.has_alerts = bool(self.weather.get("alerts"))
+
+            self.display_description = self.description
+
+            if self.has_alerts:
+                if self.alerts_startEpoch and self.alerts_endsEpoch:
+                    try:
+                        now_epoch = int(time.time())
+                    except:
+                        now_epoch = None
+
+                    if now_epoch:
+                        if now_epoch >= int(self.alerts_startEpoch) and now_epoch <= int(self.alerts_endsEpoch):
+                            parts = []
+
+                            if self.alerts_headline:
+                                parts.append(self.alerts_event)
+
+                            if self.alerts_description:
+                                parts.append(self.alerts_headline)
+
+                            if parts:
+                                self.display_description = ": ".join(parts)
+
             # get current conditions
             self.current_conditions = self.weather["currentConditions"]["conditions"]
+
             self.current_icon = str(self.icon_path) + "conditions/" + str(self.weather["currentConditions"]["icon"]) + ".png"
             self.current_temp = str(int(round(self.weather["currentConditions"]["temp"]))) + "°"
             self.current_feelslike = _("Feels like ") + str(int(round(self.weather["currentConditions"]["feelslike"]))) + "°"
@@ -261,7 +309,7 @@ class VisualWeather_Forecast(Screen):
             self.current_windspeed = str(int(round(self.weather["currentConditions"]["windspeed"]))) + str(windunit)
             self.current_winddir = float(self.weather["currentConditions"]["winddir"])
 
-            #fall back icon
+            # fall back icon
             self.current_wind_icon = "n"
 
             if self.current_winddir <= 11.25 or self.current_winddir >= 348.76:
@@ -448,7 +496,7 @@ class VisualWeather_Forecast(Screen):
 
         # not compact
         if not self.infobarskin or cfg.infobarsize.value == "full" or cfg.developer.value:
-            self["description"].setText(str(self.description))
+            self["description"].setText(str(self.display_description))
             self["sunrise"].setText(str(self.current_sunrise))
             self["sunset"].setText(str(self.current_sunset))
 
